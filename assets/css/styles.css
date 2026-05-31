@@ -35,6 +35,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -91,7 +92,7 @@ a:hover {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 1000;
   border-bottom: 1px solid rgba(143, 71, 69, 0.16);
   background: rgba(255, 248, 238, 0.95);
   backdrop-filter: blur(12px);
@@ -210,6 +211,11 @@ a:hover {
 
 main {
   overflow: hidden;
+}
+
+section,
+[id] {
+  scroll-margin-top: 96px;
 }
 
 .section,
@@ -433,27 +439,43 @@ p {
 }
 
 .gallery-grid {
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .gallery-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   gap: 0.75rem;
-  align-content: start;
+  padding: 1rem;
+}
+
+.gallery-card h2 {
+  font-size: clamp(1.35rem, 1.1rem + 0.6vw, 1.85rem);
+  line-height: 1.15;
+}
+
+.gallery-card .button {
+  width: 100%;
+  margin-top: auto;
 }
 
 .gallery-card .item-art {
-  display: grid;
-  place-items: center;
+  display: flex;
   min-height: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   border-radius: 14px;
   background: linear-gradient(145deg, rgba(246, 203, 193, 0.38), rgba(158, 189, 175, 0.24));
 }
 
 .gallery-card .item-art img {
-  width: 116px;
-  height: 116px;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: contain;
   filter: drop-shadow(0 8px 14px rgba(74, 51, 40, 0.16));
 }
@@ -859,7 +881,7 @@ summary {
   top: 1rem;
   right: 1.2rem;
   color: var(--gold);
-  content: "✦";
+  content: "*";
   font-size: 1.4rem;
 }
 
@@ -867,7 +889,7 @@ summary {
   right: 2.8rem;
   bottom: 1.2rem;
   color: var(--rose);
-  content: "♡";
+  content: "";
   font-size: 1.15rem;
 }
 
@@ -1025,5 +1047,93 @@ textarea {
   .hero-media,
   .hero-media img {
     min-height: 420px;
+  }
+}
+
+/* Navigation and card layout tightening pass. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 22px rgba(63, 42, 68, 0.06);
+}
+
+.card h2,
+.card h3 {
+  line-height: 1.15;
+}
+
+.icon-card h3 {
+  font-size: clamp(1.25rem, 1.05rem + 0.45vw, 1.55rem);
+}
+
+.gallery-grid {
+  align-items: stretch;
+  grid-template-columns: 1fr;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.gallery-card h2 {
+  font-size: clamp(1.35rem, 1.1rem + 0.6vw, 1.85rem);
+  line-height: 1.15;
+}
+
+.gallery-card p {
+  margin-bottom: 0.25rem;
+}
+
+.gallery-card .button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.gallery-card .item-art {
+  display: flex;
+  height: 150px;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.gallery-card .item-art img {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-card .item-art {
+    height: 165px;
+    min-height: 165px;
+  }
+}
+
+@media (min-width: 980px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .gallery-card {
+    padding: 1.1rem;
+  }
+
+  .gallery-card .item-art {
+    height: 178px;
+    min-height: 178px;
   }
 }
