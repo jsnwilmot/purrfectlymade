@@ -1197,3 +1197,61 @@ main {
   color: #ffffff;
   border: 1px solid rgba(251, 229, 234, 0.32);
 }
+
+/* Mobile hero banner containment and spacing review. */
+.hero-media {
+  height: auto;
+  min-height: 0;
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.hero h1 {
+  font-size: clamp(2.15rem, 10vw, 4.75rem);
+}
+
+.hero .eyebrow {
+  line-height: 1.35;
+}
+
+@media (max-width: 700px) {
+  html {
+    scroll-padding-top: 82px;
+  }
+
+  section,
+  [id] {
+    scroll-margin-top: 82px;
+  }
+
+  .hero {
+    margin-top: 1.35rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-card {
+    padding: 1.1rem;
+  }
+
+  .hero .lead {
+    margin-top: 0.7rem;
+    font-size: 1.02rem;
+  }
+
+  .button-row {
+    gap: 0.65rem;
+  }
+
+  .hero .button {
+    flex: 1 1 100%;
+  }
+
+  .notice {
+    margin-top: 1rem;
+  }
+}

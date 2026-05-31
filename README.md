@@ -125,3 +125,10 @@ The site uses semantic HTML, a skip link, visible focus states, labelled form fi
 - Add a privacy page if a production form service is connected.
 - Add more care details by material once final products are known.
 - Run Lighthouse against the production URL after deployment.
+
+## Maintenance Notes
+
+- Mobile hero banner now uses full-image containment so the cats, logo, and product artwork are not cropped.
+- Mobile layout was reviewed for hero spacing, typography, and tap targets.
+- Sticky nav, gallery/care card layout, footer behavior, Facebook link attributes, and safety rules were rechecked.
+- Files changed in this pass: `assets/css/styles.css` and `README.md`.
