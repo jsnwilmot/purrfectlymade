@@ -1137,3 +1137,63 @@ textarea {
     min-height: 178px;
   }
 }
+
+/* Sticky header and footer layout reliability pass. */
+html {
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+.site-header {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 248, 239, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+main {
+  flex: 1 0 auto;
+  overflow: visible;
+}
+
+.site-footer {
+  flex-shrink: 0;
+}
+
+.site-footer h2 {
+  color: #fff8ef;
+}
+
+.site-footer .footer-note {
+  color: #eadcf8;
+}
+
+.site-footer .footer-links a,
+.site-footer .footer-wrap a {
+  color: #fbe5ea;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-wrap a:hover {
+  color: #ffffff;
+}
+
+.site-footer .footer-links a:focus-visible,
+.site-footer .footer-wrap a:focus-visible {
+  box-shadow: 0 0 0 4px rgba(248, 214, 223, 0.36);
+}
+
+.site-footer .facebook-link {
+  color: #ffffff;
+  border: 1px solid rgba(251, 229, 234, 0.32);
+}
