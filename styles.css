@@ -634,7 +634,7 @@ button:focus-visible {
 }
 
 .request-page {
-  padding-top: 1rem;
+  padding-top: 1.35rem;
   padding-bottom: 1.1rem;
 }
 
@@ -653,6 +653,47 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: clamp(1.45rem, 2.8vw, 1.95rem);
+}
+
+.request-page-body .site-header {
+  padding-bottom: 0.45rem;
+}
+
+.request-page-body .header-shell {
+  min-height: 116px;
+}
+
+.request-page-body .primary-nav {
+  min-height: 108px;
+  padding: 0 24px;
+}
+
+.request-page-body .nav-left,
+.request-page-body .nav-right {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.request-page-body .brand-center {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: clamp(230px, 25vw, 300px);
+  margin: 0.4rem auto 0;
+  display: block;
+}
+
+.request-page-body .header-divider {
+  display: none;
+}
+
+.request-page-body main {
+  padding-top: 0;
+}
+
+.request-page-body .request-page {
+  padding-top: 1.1rem;
 }
 
 .request-form {
@@ -1041,6 +1082,24 @@ button:focus-visible {
 }
 
 @media (max-width: 930px) {
+  .request-page-body .header-shell {
+    min-height: 76px;
+  }
+
+  .request-page-body .mobile-header-controls {
+    bottom: auto;
+    top: 14px;
+  }
+
+  .request-page-body .brand-center {
+    width: clamp(204px, 53vw, 274px);
+    margin-top: 1.7rem;
+  }
+
+  .request-page-body .request-page {
+    padding-top: 0.8rem;
+  }
+
   .header-shell {
     min-height: 332px;
   }
@@ -1121,6 +1180,15 @@ button:focus-visible {
 }
 
 @media (max-width: 600px) {
+  .request-page-body .brand-center {
+    width: clamp(196px, 62vw, 242px);
+    margin-top: 1.78rem;
+  }
+
+  .request-page-body .request-page-card {
+    margin: 0 0.15rem;
+  }
+
   .header-shell {
     min-height: 334px;
   }
@@ -1242,6 +1310,23 @@ button:focus-visible {
 }
 
 @media (max-width: 420px) {
+  .request-page-body .header-shell {
+    min-height: 72px;
+  }
+
+  .request-page-body .mobile-header-controls {
+    top: 11px;
+  }
+
+  .request-page-body .brand-center {
+    width: 198px;
+    margin-top: 1.75rem;
+  }
+
+  .request-page-body .request-page {
+    padding-top: 0.72rem;
+  }
+
   .header-shell {
     min-height: 318px;
   }

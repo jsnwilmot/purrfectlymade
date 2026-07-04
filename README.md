@@ -70,6 +70,7 @@ Manual fallback deploy command:
 
 - Web3Forms custom order/contact request form now lives on `request.html`.
 - Homepage lower feature row is restored to compact cards and links to `request.html` for requests.
+- Request page uses a secondary-page header spacing treatment so logo and request card do not overlap.
 - Form endpoint remains `https://api.web3forms.com/submit` using `POST`.
 - Hidden fields in use: `access_key`, `subject`, and `from_name`.
 - Honeypot anti-spam field `botcheck` is included and hidden from users.

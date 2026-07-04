@@ -9,6 +9,14 @@
 
 ## 2026-07-04
 
+### Request page logo overlap layout fix pass
+
+- Added request-page-specific secondary header treatment to prevent logo overlap with request form content.
+- Kept homepage header/hero logo overlap design unchanged and scoped layout overrides to request page only.
+- Adjusted request page top spacing so page title, intro copy, and form card remain fully visible at desktop, tablet, and mobile widths.
+- Verified request page mobile hamburger menu behavior and no horizontal overflow at 390 width.
+- Re-verified homepage lower card row balance, request CTA routing to `request.html`, and no homepage form-card stretch regression.
+
 ### Request page extraction and homepage card balance restoration pass
 
 - Moved full Web3Forms custom-order/contact form from homepage card row to new `request.html` page.

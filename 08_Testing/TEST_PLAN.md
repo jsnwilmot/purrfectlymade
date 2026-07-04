@@ -68,6 +68,8 @@ Validation, generation, persistence, document preview, and export behavior for t
 ## Request page QA checklist
 
 - Verify `request.html` loads with one `h1` and expected intro copy.
+- Verify logo does not overlap request card title, intro copy, or form fields.
+- Verify request page uses secondary header spacing treatment (logo visible and separated from form card).
 - Verify Web3Forms form fields match approved customer-facing wording.
 - Verify required fields are Name, Email, Request Type, Message, and agreement checkbox.
 - Verify optional fields are Phone, Item or Category, Preferred Colours, and Pickup or Delivery Question.
@@ -76,6 +78,7 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Verify status message uses live region behavior for validation/success/error.
 - Verify payment-details agreement checkbox is required and has visible label text.
 - Verify no horizontal overflow on `request.html` at mobile width.
+- Verify request page hamburger menu opens/closes correctly at mobile and tablet widths.
 
 ## Manual test checklist
 
