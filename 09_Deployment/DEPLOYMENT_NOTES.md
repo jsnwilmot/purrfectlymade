@@ -47,6 +47,26 @@ Expected behavior:
 - Cloudflare deploys static files from `dist/` only.
 - `node_modules/` is excluded by `.gitignore` and is not a deployable static asset directory.
 
+## Cloudflare Workers configuration
+
+Use these settings when deploying via Wrangler:
+
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: `/`
+- Wrangler config: `wrangler.toml`
+- Assets directory: `./dist`
+
+Wrangler config values in this repository:
+
+- `name = "purrfectlymade"`
+- `compatibility_date = "2026-07-04"`
+- `[assets] directory = "./dist"`
+
+Alternative manual deploy command:
+
+- `npx wrangler deploy --assets=dist --compatibility-date=2026-07-04`
+
 ## Deployment steps
 
 - [MISSING: deployment steps by environment]

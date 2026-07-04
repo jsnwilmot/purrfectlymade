@@ -37,6 +37,18 @@ Static output is generated into `dist/`.
 - Root directory: leave blank unless this repo is moved into a subfolder
 - Never deploy repository root (`/opt/buildhome/repo`) as the assets directory
 
+## Cloudflare Workers deployment
+
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: `/`
+- Wrangler config file: `wrangler.toml`
+- Assets directory is configured in Wrangler as `./dist`
+
+Manual fallback deploy command:
+
+- `npx wrangler deploy --assets=dist --compatibility-date=2026-07-04`
+
 ## Notes
 
 - This project is static only.
