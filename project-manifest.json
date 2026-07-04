@@ -1,0 +1,170 @@
+{
+  "packageSchemaVersion": 1,
+  "activeProjectId": "2fed42b9-f22e-4b82-9da2-37226e485e9e",
+  "projectName": "PurrfectlyMade Website",
+  "clientName": "Isabella Pinzarrone",
+  "appType": "Static website",
+  "projectStatus": "Ready for Codex",
+  "reviewStatus": "Approved",
+  "exportedAt": "2026-07-04T16:09:17.671Z",
+  "generatedDocumentCount": 19,
+  "expectedDocumentCount": 19,
+  "missingInformationMarkerCount": 49,
+  "readiness": "Ready for Codex",
+  "exportWarnings": [
+    "49 missing-information marker(s) will remain in the export."
+  ],
+  "exportErrors": [],
+  "rootFolder": "purrfectlymade-website",
+  "folderStructure": [
+    {
+      "folder": "00_Project_Overview",
+      "coreFileCount": 5
+    },
+    {
+      "folder": "01_Requirements",
+      "coreFileCount": 3
+    },
+    {
+      "folder": "02_Architecture",
+      "coreFileCount": 2
+    },
+    {
+      "folder": "03_Data_Model",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "04_UI_UX",
+      "coreFileCount": 2
+    },
+    {
+      "folder": "05_Workflows",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "06_Security",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "07_Development",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "08_Testing",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "09_Deployment",
+      "coreFileCount": 1
+    },
+    {
+      "folder": "10_Documentation",
+      "coreFileCount": 0
+    },
+    {
+      "folder": "11_Codex_Prompts",
+      "coreFileCount": 1
+    }
+  ],
+  "files": [
+    {
+      "fileName": "README.md",
+      "folder": "00_Project_Overview",
+      "path": "00_Project_Overview/README.md"
+    },
+    {
+      "fileName": "PROJECT_SCOPE.md",
+      "folder": "00_Project_Overview",
+      "path": "00_Project_Overview/PROJECT_SCOPE.md"
+    },
+    {
+      "fileName": "NEXT_STEPS.md",
+      "folder": "00_Project_Overview",
+      "path": "00_Project_Overview/NEXT_STEPS.md"
+    },
+    {
+      "fileName": "CHANGE_LOG.md",
+      "folder": "00_Project_Overview",
+      "path": "00_Project_Overview/CHANGE_LOG.md"
+    },
+    {
+      "fileName": "HANDOFF_CHECKLIST.md",
+      "folder": "00_Project_Overview",
+      "path": "00_Project_Overview/HANDOFF_CHECKLIST.md"
+    },
+    {
+      "fileName": "CLIENT_REQUIREMENTS.md",
+      "folder": "01_Requirements",
+      "path": "01_Requirements/CLIENT_REQUIREMENTS.md"
+    },
+    {
+      "fileName": "CLIENT_QUESTIONS.md",
+      "folder": "01_Requirements",
+      "path": "01_Requirements/CLIENT_QUESTIONS.md"
+    },
+    {
+      "fileName": "ACCEPTANCE_CRITERIA.md",
+      "folder": "01_Requirements",
+      "path": "01_Requirements/ACCEPTANCE_CRITERIA.md"
+    },
+    {
+      "fileName": "ARCHITECT_INSTRUCTIONS.md",
+      "folder": "02_Architecture",
+      "path": "02_Architecture/ARCHITECT_INSTRUCTIONS.md"
+    },
+    {
+      "fileName": "APP_BLUEPRINT.md",
+      "folder": "02_Architecture",
+      "path": "02_Architecture/APP_BLUEPRINT.md"
+    },
+    {
+      "fileName": "DATA_MODEL.md",
+      "folder": "03_Data_Model",
+      "path": "03_Data_Model/DATA_MODEL.md"
+    },
+    {
+      "fileName": "SCREEN_MAP.md",
+      "folder": "04_UI_UX",
+      "path": "04_UI_UX/SCREEN_MAP.md"
+    },
+    {
+      "fileName": "BRAND_GUIDE.md",
+      "folder": "04_UI_UX",
+      "path": "04_UI_UX/BRAND_GUIDE.md"
+    },
+    {
+      "fileName": "WORKFLOW_MAP.md",
+      "folder": "05_Workflows",
+      "path": "05_Workflows/WORKFLOW_MAP.md"
+    },
+    {
+      "fileName": "SECURITY_MODEL.md",
+      "folder": "06_Security",
+      "path": "06_Security/SECURITY_MODEL.md"
+    },
+    {
+      "fileName": "CODEX_INSTRUCTIONS.md",
+      "folder": "07_Development",
+      "path": "07_Development/CODEX_INSTRUCTIONS.md"
+    },
+    {
+      "fileName": "TEST_PLAN.md",
+      "folder": "08_Testing",
+      "path": "08_Testing/TEST_PLAN.md"
+    },
+    {
+      "fileName": "DEPLOYMENT_NOTES.md",
+      "folder": "09_Deployment",
+      "path": "09_Deployment/DEPLOYMENT_NOTES.md"
+    },
+    {
+      "fileName": "PHASED_CODEX_PROMPTS.md",
+      "folder": "11_Codex_Prompts",
+      "path": "11_Codex_Prompts/PHASED_CODEX_PROMPTS.md"
+    }
+  ],
+  "diagnosticFiles": [
+    "00_Project_Overview/EXPORT_MANIFEST.md",
+    "project-manifest.json"
+  ]
+}

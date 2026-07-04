@@ -1,5 +1,0 @@
-Purrfectly Made
-
-Purpose: Static showcase and safe request funnel for a local kid-owned handmade craft brand in the Lethbridge, Alberta area.
-Built with: HTML, CSS, and minimal JavaScript.
-Safety: Requests are reviewed by a parent or guardian before anything is confirmed.
