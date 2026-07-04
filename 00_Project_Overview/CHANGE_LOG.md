@@ -9,6 +9,13 @@
 
 ## 2026-07-04
 
+### Homepage lower feature card height alignment pass
+
+- Fixed uneven lower feature row heights by enforcing stretch alignment across all three homepage feature cards.
+- Updated non-about feature cards to use column layout with full-height behavior.
+- Aligned Custom Orders and Request an Item CTA buttons with consistent bottom rhythm.
+- Preserved Made With Love card image/text/signature layout without distortion.
+
 ### Request page logo overlap layout fix pass
 
 - Added request-page-specific secondary header treatment to prevent logo overlap with request form content.
