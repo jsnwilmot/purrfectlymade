@@ -34,5 +34,28 @@ Static output is generated into `dist/`.
 
 - This project is static only.
 - No checkout, payment processing, authentication, backend, or database are included.
-- Missing production URLs are kept as explicit missing-decision markers where required.
 - Homepage remains under strict visual parity requirements and is not complete while visible pixel-perfect differences remain.
+
+## Production metadata baseline
+
+- Canonical domain: `https://www.purrfectlymade.ca/`
+- Open Graph URL/image and Twitter image use absolute URLs on the confirmed canonical domain.
+- Facebook link is active: `https://www.facebook.com/PurrfectlyMadeCrafts`
+- Instagram links are hidden for now (no public Instagram profile yet).
+- Public email link is not exposed yet.
+- Newsletter card is marked `Coming Soon` and is intentionally non-clickable.
+- Cart/bag icon has been removed to avoid implying checkout functionality.
+- Custom-order CTA routing currently targets the on-page custom-order/contact area.
+- Web3Forms integration is deferred to the next form phase.
+
+## Deployment files
+
+Build output now includes deployment-critical files:
+
+- `dist/index.html`
+- `dist/404.html`
+- `dist/robots.txt`
+- `dist/sitemap.xml`
+- `dist/CNAME`
+- `dist/manifest.webmanifest`
+- active favicon manifest and icons under `dist/assets/images/favicon/`

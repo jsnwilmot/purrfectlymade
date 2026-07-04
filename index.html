@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Purrfectly Made | Handmade Crafts, Gifts & Custom Orders</title>
+    <link rel="canonical" href="https://www.purrfectlymade.ca/" />
     <meta
       name="description"
       content="Shop cute handmade crafts, bracelets, keychains, earrings, resin pieces, 3D printed items, seasonal gifts, and custom creations from Purrfectly Made."
@@ -13,16 +14,16 @@
       property="og:description"
       content="Shop cute handmade crafts, bracelets, keychains, earrings, resin pieces, 3D printed items, seasonal gifts, and custom creations from Purrfectly Made."
     />
-    <meta property="og:image" content="assets/images/purrfectly-made-og.png" />
+    <meta property="og:image" content="https://www.purrfectlymade.ca/assets/images/purrfectly-made-og.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="[MISSING DECISION: production website URL is required for correct Open Graph sharing previews]." />
+    <meta property="og:url" content="https://www.purrfectlymade.ca/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Purrfectly Made | Handmade Crafts, Gifts & Custom Orders" />
     <meta
       name="twitter:description"
       content="Shop cute handmade crafts, bracelets, keychains, earrings, resin pieces, 3D printed items, seasonal gifts, and custom creations from Purrfectly Made."
     />
-    <meta name="twitter:image" content="assets/images/purrfectly-made-og.png" />
+    <meta name="twitter:image" content="https://www.purrfectlymade.ca/assets/images/purrfectly-made-og.png" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
@@ -48,12 +49,6 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </button>
-          <a class="bag-link mobile-bag-link" href="#shop" aria-label="View shop items">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M7 9h10l-1 10H8L7 9z" />
-              <path d="M9 9a3 3 0 0 1 6 0" />
-            </svg>
-          </a>
         </div>
 
         <nav aria-label="Primary" class="primary-nav">
@@ -66,14 +61,6 @@
           <ul class="nav-right">
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li>
-              <a class="bag-link" href="#shop" aria-label="View shop items">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M7 9h10l-1 10H8L7 9z" />
-                  <path d="M9 9a3 3 0 0 1 6 0" />
-                </svg>
-              </a>
-            </li>
           </ul>
         </nav>
 
@@ -91,7 +78,6 @@
           <li><a href="#custom-orders">Custom Orders</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#shop">Cart</a></li>
         </ul>
       </div>
     </header>
@@ -231,7 +217,7 @@
               <div class="icon-round"><img src="assets/images/icon-locket.png" alt="" /></div>
               <h3>Stay In The Loop</h3>
               <p>Be the first to know about new items, restocks, and special offers!</p>
-              <a class="btn btn-secondary" href="[MISSING DECISION: approved email signup URL is required for newsletter capture].">Join Our Email List</a>
+              <span class="btn btn-secondary btn-disabled" role="status" aria-label="Newsletter signup coming soon">Coming Soon</span>
             </article>
           </div>
         </div>
@@ -239,7 +225,7 @@
 
       <section class="instagram" aria-labelledby="instagram-title">
         <div class="shell">
-          <h2 class="section-title" id="instagram-title">Follow Us On Instagram</h2>
+          <h2 class="section-title" id="instagram-title">New Items Coming Soon</h2>
           <div class="insta-grid">
             <img src="assets/images/icon-heart-resin.png" alt="Resin heart craft preview" />
             <img src="assets/images/icon-charm.png" alt="Heart keychain craft preview" />
@@ -250,8 +236,8 @@
             <img src="assets/images/icon-locket.png" alt="Earring craft preview" />
             <article class="insta-card">
               <img src="assets/images/icon-192.png" alt="" />
-              <p>@purrfectly.made</p>
-              <a href="[MISSING DECISION: approved Instagram URL is required for social profile linking].">See More &gt;</a>
+              <p>Social updates coming soon</p>
+              <span class="insta-note">Follow along soon</span>
             </article>
           </div>
         </div>
@@ -297,9 +283,9 @@
           <section>
             <h2>Connect</h2>
             <ul>
-              <li><a href="[MISSING DECISION: approved Facebook page or Messenger URL is required for public contact].">Facebook</a></li>
-              <li><a href="[MISSING DECISION: approved Instagram URL is required for social profile linking].">Instagram</a></li>
-              <li><a href="[MISSING DECISION: approved email contact URL or mailto recipient is required for customer contact].">Email Us</a></li>
+              <li><a href="https://www.facebook.com/PurrfectlyMadeCrafts" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="#custom-orders">Custom Orders</a></li>
+              <li><span class="footer-inline-note">Newsletter coming soon</span></li>
             </ul>
           </section>
           <section class="footer-note">
@@ -322,7 +308,7 @@
         const menuButton = document.querySelector('.menu-toggle');
         const menuPanel = document.getElementById('mobile-menu');
         const menuLinks = menuPanel ? menuPanel.querySelectorAll('a') : [];
-        const mobileMq = window.matchMedia('(max-width: 1100px)');
+        const mobileMq = window.matchMedia('(max-width: 930px)');
 
         if (!header || !menuButton || !menuPanel) {
           return;

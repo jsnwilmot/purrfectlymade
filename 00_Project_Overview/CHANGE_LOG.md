@@ -2,12 +2,28 @@
 
 **Project:** PurrfectlyMade Website  
 **Client:** Isabella Pinzarrone  
-**Business or department:** [MISSING: business or department]  
+**Business or department:** Purrfectly Made  
 **Project type:** Static website  
 **Target platform:** Web browser, tablet, mobile  
 **Status:** Ready for Codex
 
 ## 2026-07-04
+
+### Production URL and deployment metadata alignment pass
+
+- Set canonical domain to `https://www.purrfectlymade.ca/` across homepage metadata, sitemap, and robots.
+- Updated Open Graph and Twitter image references to absolute canonical-domain URLs.
+- Removed cart/bag icon UI from header and mobile controls to avoid checkout implication.
+- Replaced newsletter action with non-clickable `Coming Soon` state.
+- Hid Instagram outgoing links for this phase and switched social messaging to a non-link update state.
+- Set Facebook link to `https://www.facebook.com/PurrfectlyMadeCrafts`.
+- Removed public email link exposure for this phase.
+- Simplified sitemap to current single-page baseline URL only.
+- Updated robots sitemap URL to canonical domain.
+- Aligned manifest strategy and ensured active favicon manifest paths resolve after build.
+- Updated `404.html` to current asset paths/routes and canonical-domain metadata.
+- Updated build script to include deployment-critical files in `dist/`.
+- Confirmed Web3Forms contact/custom-order form integration is deferred to the next phase.
 
 ### Header and hero responsive stabilization pass
 

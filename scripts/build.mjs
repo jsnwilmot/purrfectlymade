@@ -7,7 +7,17 @@ const dist = resolve(root, "dist");
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 
-const itemsToCopy = ["index.html", "styles.css", "src", "assets"];
+const itemsToCopy = [
+  "index.html",
+  "404.html",
+  "robots.txt",
+  "sitemap.xml",
+  "CNAME",
+  "manifest.webmanifest",
+  "styles.css",
+  "src",
+  "assets"
+];
 
 for (const item of itemsToCopy) {
   const source = resolve(root, item);

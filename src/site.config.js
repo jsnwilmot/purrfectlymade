@@ -1,8 +1,8 @@
 export const SITE_CONFIG = Object.freeze({
   businessName: "Purrfectly Made",
-  businessOrDepartment: "[MISSING: business or department]",
+  businessOrDepartment: "Purrfectly Made",
   contact: {
-    facebookUrl: "[MISSING DECISION: approved Facebook page or Messenger URL is required for public contact]."
+    facebookUrl: "https://www.facebook.com/PurrfectlyMadeCrafts"
   },
   seo: {
     titleSuffix: " | Handmade Gifts & Custom Craft Requests"

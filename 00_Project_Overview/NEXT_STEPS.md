@@ -2,7 +2,7 @@
 
 **Project:** PurrfectlyMade Website  
 **Client:** Isabella Pinzarrone  
-**Business or department:** [MISSING: business or department]  
+**Business or department:** Purrfectly Made  
 **Project type:** Static website  
 **Target platform:** Web browser, tablet, mobile  
 **Status:** Ready for Codex
@@ -26,7 +26,7 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Immediate next action
 
-Review PROJECT_SCOPE.md and resolve every required missing marker before marking the project Ready for Codex.
+Implement the Web3Forms-based custom-order/contact form phase using existing `#custom-orders` and `#contact` anchor destinations.
 
 ## Codex progress update
 
@@ -38,13 +38,12 @@ Review PROJECT_SCOPE.md and resolve every required missing marker before marking
 ## Homepage implementation follow-up
 
 - Validate homepage against approved desktop reference image with final stakeholder visual review.
-- Review pass-7 header/hero defect fixes (logo scale, condensed script fit, heart/paw icon sizing, nav centering, hero fade) for final visual approval.
-- Review pass-6 responsive stabilization at desktop/tablet/mobile widths to confirm no header/nav/logo regressions.
-- Provide approved production URLs for Open Graph, Instagram, Facebook, and email/contact links.
-- Confirm final visual sign-off after HeroBG and two-cats asset replacement pass.
+- Confirm production metadata and deployment baseline remains aligned with canonical domain `https://www.purrfectlymade.ca/`.
+- Keep Instagram hidden until an official profile is approved.
+- Keep newsletter in `Coming Soon` state until newsletter destination is approved.
+- Keep public email hidden until approved contact mailbox is available.
+- Start Web3Forms custom-order/contact integration in the next phase.
 - Keep footer credit `Created by Rose & Paw Digital Designs` linked to `https://design.roseandpaw.ca` in all future homepage revisions.
-- Resolve remaining micro-differences in exact script letterform and exact logo overlap depth to meet strict desktop parity acceptance.
-- Confirm full-width desktop screenshot validation outside integrated browser pane constraints.
 
 ## Architect review tasks
 

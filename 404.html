@@ -4,39 +4,78 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found | Purrfectly Made</title>
-  <meta name="description" content="This Purrfectly Made page could not be found. Visit the home page, gallery, or request form.">
+  <meta name="description" content="This Purrfectly Made page could not be found. Return to the homepage to view handmade items and custom order updates.">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://purrfectlymade.ca/404.html">
+  <link rel="canonical" href="https://www.purrfectlymade.ca/404.html">
   <meta property="og:title" content="Page Not Found | Purrfectly Made">
-  <meta property="og:description" content="Find handmade gifts, browse the gallery, or send a request.">
-  <meta property="og:image" content="https://purrfectlymade.ca/assets/images/purrfectly-made-og.png">
+  <meta property="og:description" content="Return to the homepage for handmade gift updates and custom order information.">
+  <meta property="og:image" content="https://www.purrfectlymade.ca/assets/images/purrfectly-made-og.png">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.purrfectlymade.ca/404.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Page Not Found | Purrfectly Made">
-  <meta name="twitter:description" content="This page could not be found.">
-  <meta name="twitter:image" content="https://purrfectlymade.ca/assets/images/purrfectly-made-og.png">
+  <meta name="twitter:description" content="Return to the homepage for handmade gift updates and custom order information.">
+  <meta name="twitter:image" content="https://www.purrfectlymade.ca/assets/images/purrfectly-made-og.png">
   <link rel="icon" href="assets/images/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .not-found-wrap {
+      min-height: calc(100vh - 36px);
+      display: grid;
+      place-items: center;
+      padding: 2rem 0;
+    }
+
+    .not-found-card {
+      width: min(760px, 92vw);
+      background: #f8f1ea;
+      border: 1px solid #e7d2c3;
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(146, 102, 76, 0.12);
+      text-align: center;
+      padding: 2rem 1.25rem;
+    }
+
+    .not-found-card img {
+      width: min(220px, 48vw);
+      margin: 0 auto 0.9rem;
+    }
+
+    .not-found-card h1 {
+      margin: 0.35rem 0 0.55rem;
+      color: #8a5a3d;
+      font-family: "Cormorant Garamond", "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+    }
+
+    .not-found-actions {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html" aria-label="Purrfectly Made home"><img src="assets/images/logo-purrfectly-made-192.png" width="192" height="181" alt=""><span>Purrfectly Made</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false"><span></span></button><nav class="site-nav" id="site-nav" data-site-nav aria-label="Main navigation"><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="care.html">Care Tips</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a class="nav-cta" href="request.html">Request an Item</a></nav></div></header>
-  <main id="main">
-    <section class="page-hero">
-      <img class="logo-mark" src="assets/images/logo-purrfectly-made-520.png" width="520" height="490" alt="Purrfectly Made logo.">
-      <p class="eyebrow">Page not found</p>
-      <h1>This handmade path wandered off</h1>
-      <p class="lead">The page you were looking for is not here, but the gallery and request form are ready.</p>
-      <div class="button-row">
-        <a class="button primary" href="index.html">Go Home</a>
-        <a class="button secondary" href="gallery.html">View Gallery</a>
-        <a class="button secondary" href="request.html">Request an Item</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement-bar" role="note">
+    <p><span aria-hidden="true">&#9829;</span> Handmade with love in Canada</p>
+  </div>
+  <main id="main-content" class="not-found-wrap">
+    <section class="not-found-card" aria-labelledby="not-found-title">
+      <img src="assets/images/logo-purrfectly-made-192.png" width="192" height="181" alt="Purrfectly Made logo">
+      <p class="trust-note" style="justify-content:center; margin-top:0;">Page not found</p>
+      <h1 id="not-found-title">This page is not available right now</h1>
+      <p>Return to the homepage to view current handmade collections and custom order updates.</p>
+      <div class="not-found-actions">
+        <a class="btn btn-primary" href="https://www.purrfectlymade.ca/">Go Home</a>
+        <a class="btn btn-secondary" href="https://www.purrfectlymade.ca/#custom-orders">Custom Orders</a>
+        <a class="btn btn-secondary" href="https://www.facebook.com/PurrfectlyMadeCrafts" target="_blank" rel="noopener noreferrer">Facebook</a>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="footer-wrap"><div><h2>Purrfectly Made</h2><p class="footer-note">All requests are reviewed by a parent or guardian before any order is confirmed.</p><div class="footer-social"><p class="footer-note">Follow Purrfectly Made on Facebook for new handmade items, updates, and local craft posts.</p><a class="facebook-link" href="https://www.facebook.com/PurrfectlyMadeCrafts" target="_blank" rel="noopener noreferrer" aria-label="Visit Purrfectly Made on Facebook">Follow on Facebook</a></div></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="request.html">Request an Item</a><a href="faq.html">FAQ</a></nav></div></footer>
-  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

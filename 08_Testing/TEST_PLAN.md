@@ -2,7 +2,7 @@
 
 **Project:** PurrfectlyMade Website  
 **Client:** Isabella Pinzarrone  
-**Business or department:** [MISSING: business or department]  
+**Business or department:** Purrfectly Made  
 **Project type:** Static website  
 **Target platform:** Web browser, tablet, mobile  
 **Status:** Ready for Codex
@@ -38,6 +38,12 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Verify hero uses approved `HeroBG.png` asset.
 - Verify Made With Love card uses approved two-cats image asset.
 - Verify footer includes subtle creator credit linked to `https://design.roseandpaw.ca`.
+- Verify canonical metadata uses `https://www.purrfectlymade.ca/`.
+- Verify Open Graph and Twitter image URLs are absolute on canonical domain.
+- Verify Facebook link points to `https://www.facebook.com/PurrfectlyMadeCrafts`.
+- Verify Instagram outbound links are hidden for this phase.
+- Verify newsletter CTA text is `Coming Soon` and non-clickable.
+- Verify cart/bag icon is removed.
 - Verify no broken images in homepage.
 - Verify no internal `#` dead links.
 - Verify no horizontal overflow at active viewport.
@@ -92,5 +98,4 @@ Validation, generation, persistence, document preview, and export behavior for t
 
 ## Known gaps
 
-- [MISSING: deployment environment details]
-- [MISSING: production secrets and configuration decisions]
+- Web3Forms custom-order/contact integration is deferred to the next phase.

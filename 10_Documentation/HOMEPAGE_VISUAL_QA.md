@@ -258,6 +258,19 @@ The approved generated homepage image is treated as the final visual target for 
 
 Use the approved exact rendered image assets (or equivalent layered export assets) to close remaining visual differences and complete strict pixel-perfect parity.
 
+## Production-readiness metadata pass (non-visual)
+
+- Canonical domain aligned to `https://www.purrfectlymade.ca/`.
+- Open Graph URL/image and Twitter image moved to absolute canonical-domain URLs.
+- Sitemap trimmed to valid single-page baseline URL only.
+- Robots sitemap value updated to canonical-domain sitemap.
+- Header/mobile cart-bag icon removed to avoid checkout implication.
+- Newsletter action changed to non-clickable `Coming Soon` state.
+- Facebook link set to `https://www.facebook.com/PurrfectlyMadeCrafts`.
+- Instagram outbound links hidden for this phase.
+- Public email link removed for this phase.
+- Web3Forms custom-order/contact setup explicitly deferred to next implementation phase.
+
 ## Pass 8: Hero spacing and responsive position stability
 
 - Focus of this pass: headline size hierarchy, headline-to-body spacing, and viewport-resize stability in the hero text block.
