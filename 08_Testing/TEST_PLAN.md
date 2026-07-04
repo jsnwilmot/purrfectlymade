@@ -30,6 +30,19 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Run tests: `npm.cmd test`
 - Run build: `npm.cmd run build`
 
+## Final launch QA results (2026-07-04)
+
+- `npm.cmd test` passed.
+- `npm.cmd run build` passed.
+- Responsive pass validated at 1440, 1280, 900, and 390 widths.
+- No horizontal overflow detected at 390 width.
+- No console runtime errors detected during launch QA flow.
+- No broken images detected on homepage.
+- No broken internal hash links detected.
+- Required payment-details agreement checkbox blocks submit when unchecked.
+- Placeholder access-key status message appears and live fetch submission is not attempted while placeholder key is present.
+- Dist output contains deployment-critical files and favicon assets.
+
 ## Homepage QA checklist
 
 - Compare built homepage screenshot against approved generated homepage image.
@@ -55,6 +68,7 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Verify form includes visible privacy note and no payment details request.
 - Verify placeholder-key guard message appears when `YOUR_WEB3FORMS_ACCESS_KEY` is present.
 - Verify status message uses live region behavior for validation/success/error.
+- Verify payment-details agreement checkbox is required and has visible label text.
 
 ## Manual test checklist
 
@@ -107,3 +121,4 @@ Validation, generation, persistence, document preview, and export behavior for t
 ## Known gaps
 
 - Web3Forms form requires production `access_key` before live submissions can succeed.
+- Native no-JavaScript fallback should not be treated as production-ready until the production key is set.

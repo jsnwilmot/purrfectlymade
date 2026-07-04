@@ -222,7 +222,6 @@
                 id="custom-order-form"
                 action="https://api.web3forms.com/submit"
                 method="POST"
-                novalidate
               >
                 <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
                 <input type="hidden" name="subject" value="New custom request from Purrfectly Made" />
@@ -291,8 +290,8 @@
                 </p>
 
                 <div class="field-row field-consent">
-                  <input id="request-consent" name="request_scope_acknowledgement" type="checkbox" />
-                  <label for="request-consent">I understand this form is for product questions and custom order requests only. Please do not send payment details through this form.</label>
+                  <input id="request-consent" name="request_scope_acknowledgement" type="checkbox" required aria-required="true" />
+                  <label for="request-consent">I understand this form is for product questions and custom order requests only. Please do not send payment details through this form. <span class="required-mark">(required)</span></label>
                 </div>
 
                 <button class="btn btn-secondary" type="submit">Send Request</button>

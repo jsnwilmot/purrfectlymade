@@ -26,7 +26,7 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Immediate next action
 
-Configure a real Web3Forms `access_key` in the homepage form before enabling live submissions.
+Configure a real Web3Forms `access_key` in the homepage form through an approved secure method before enabling live submissions.
 
 ## Codex progress update
 
@@ -49,9 +49,15 @@ Configure a real Web3Forms `access_key` in the homepage form before enabling liv
 
 - Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `index.html` with the production key.
 - Verify successful submit response and user-facing success status message.
+- Verify required payment-details agreement checkbox is checked before submit.
 - Verify no payment detail collection is requested in form copy.
 - Verify privacy note remains visible near the form.
 - Verify no secrets are committed in repository history.
+
+## Final launch blockers
+
+- Production Web3Forms key has not been configured yet.
+- Final stakeholder sign-off for homepage visual parity is pending.
 
 ## Architect review tasks
 
@@ -92,7 +98,7 @@ Phase 1: Project setup
 
 ## Blockers
 
-- None.
+- Production Web3Forms key insertion via approved secure path.
 
 ## Non-blocking improvements
 

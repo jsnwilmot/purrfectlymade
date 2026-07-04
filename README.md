@@ -55,6 +55,9 @@ Static output is generated into `dist/`.
 - Honeypot anti-spam field `botcheck` is included and hidden from users.
 - No real access key is committed. Placeholder remains: `YOUR_WEB3FORMS_ACCESS_KEY`.
 - Live submissions will not work until a real Web3Forms access key is added.
+- Payment-details agreement checkbox is required before submit.
+- Current JavaScript enhancement prevents live submission attempts while placeholder key is present.
+- Native no-JavaScript fallback still posts to the configured endpoint and should not be considered production-ready until key setup is complete.
 
 ### Customer-facing form scope
 
@@ -63,6 +66,18 @@ Static output is generated into `dist/`.
 - Privacy note shown near the form:
    - `Please share only the details needed for your request. Your information will only be used to reply about your order or question.`
 - Customer-facing wording was cleaned up to remove awkward parent/guardian form language.
+
+## Form activation steps
+
+1. Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `index.html` with the approved production key using a secure method.
+2. Run `npm.cmd test` and `npm.cmd run build`.
+3. Validate request form submit success and error states in browser.
+4. Confirm no secrets were committed in staged changes before push.
+
+## Final launch blockers
+
+- Web3Forms production access key has not been configured yet.
+- Final stakeholder visual parity sign-off is still required.
 
 ## Deployment files
 

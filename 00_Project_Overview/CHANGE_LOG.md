@@ -9,6 +9,21 @@
 
 ## 2026-07-04
 
+### Final form activation and launch-readiness pass
+
+- Made payment-details agreement checkbox required on the homepage request form.
+- Confirmed form action remains `https://api.web3forms.com/submit` with `POST`.
+- Confirmed hidden fields remain `access_key`, `subject`, `from_name`, and honeypot `botcheck`.
+- Confirmed placeholder access key guard prevents live fetch submission attempts in JavaScript flow.
+- Confirmed user-facing placeholder status message clearly states form is not active yet.
+- Verified CTA and anchor routing: custom-order and product detail actions route to `#contact`.
+- Verified Facebook and Rose & Paw links are correct and active.
+- Verified Instagram outbound links remain hidden and newsletter remains non-link `Coming Soon` text.
+- Verified no cart/bag icon is present.
+- Verified responsive behavior at 1440, 1280, 900, and 390 breakpoints with no horizontal overflow.
+- Verified no console errors, no broken images, and no dead internal hash links.
+- Re-verified canonical, OG, Twitter, sitemap, robots, CNAME, and dist deployment artifacts.
+
 ### Web3Forms custom request wording and safety refinement pass
 
 - Refined homepage Web3Forms contact/request form copy for polished customer-facing language.
