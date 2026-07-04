@@ -30,6 +30,13 @@ The generated homepage image provided in project approval is the design source o
 
 Static output is generated into `dist/`.
 
+## Cloudflare Pages deployment
+
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: leave blank unless this repo is moved into a subfolder
+- Never deploy repository root (`/opt/buildhome/repo`) as the assets directory
+
 ## Notes
 
 - This project is static only.

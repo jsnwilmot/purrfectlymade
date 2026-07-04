@@ -28,6 +28,25 @@ Web browser, tablet, mobile
 - npm.cmd run build
 - npm.cmd audit
 
+## Cloudflare Pages configuration
+
+Use these settings for this repository:
+
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: leave blank (unless this project is moved into a subfolder)
+
+Critical safeguards:
+
+- Do not deploy the repository root.
+- Do not set assets/output directory to `/opt/buildhome/repo`.
+- Do not configure assets upload as `.`.
+
+Expected behavior:
+
+- Cloudflare deploys static files from `dist/` only.
+- `node_modules/` is excluded by `.gitignore` and is not a deployable static asset directory.
+
 ## Deployment steps
 
 - [MISSING: deployment steps by environment]
