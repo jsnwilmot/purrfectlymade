@@ -26,7 +26,7 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Immediate next action
 
-Implement the Web3Forms-based custom-order/contact form phase using existing `#custom-orders` and `#contact` anchor destinations.
+Configure a real Web3Forms `access_key` in the homepage form before enabling live submissions.
 
 ## Codex progress update
 
@@ -42,8 +42,16 @@ Implement the Web3Forms-based custom-order/contact form phase using existing `#c
 - Keep Instagram hidden until an official profile is approved.
 - Keep newsletter in `Coming Soon` state until newsletter destination is approved.
 - Keep public email hidden until approved contact mailbox is available.
-- Start Web3Forms custom-order/contact integration in the next phase.
+- Confirm Web3Forms form activation after key configuration and re-run form QA checks.
 - Keep footer credit `Created by Rose & Paw Digital Designs` linked to `https://design.roseandpaw.ca` in all future homepage revisions.
+
+## Form activation checklist
+
+- Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `index.html` with the production key.
+- Verify successful submit response and user-facing success status message.
+- Verify no payment detail collection is requested in form copy.
+- Verify privacy note remains visible near the form.
+- Verify no secrets are committed in repository history.
 
 ## Architect review tasks
 

@@ -629,6 +629,127 @@ button:focus-visible {
   opacity: 0.9;
 }
 
+.contact-card {
+  align-self: start;
+}
+
+.request-form {
+  display: grid;
+  gap: 0.52rem;
+  margin-top: 0.55rem;
+}
+
+.field-row {
+  display: grid;
+  gap: 0.22rem;
+}
+
+.field-row label {
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #865d47;
+}
+
+.required-mark,
+.optional-mark {
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.required-mark {
+  color: #9a5a44;
+}
+
+.optional-mark {
+  color: #8d725f;
+}
+
+.field-row input,
+.field-row select,
+.field-row textarea {
+  width: 100%;
+  border: 1px solid #dcbfae;
+  border-radius: 10px;
+  background: #fffaf6;
+  color: #6e4b39;
+  padding: 0.58rem 0.64rem;
+  font: inherit;
+}
+
+.field-row textarea {
+  resize: vertical;
+  min-height: 98px;
+}
+
+.field-row input:focus-visible,
+.field-row select:focus-visible,
+.field-row textarea:focus-visible {
+  outline: 3px solid rgba(201, 148, 59, 0.4);
+  outline-offset: 1px;
+  border-color: #c9943b;
+}
+
+.field-consent {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.4rem;
+  margin-top: 0.1rem;
+}
+
+.field-consent input {
+  margin-top: 0.2rem;
+  width: 17px;
+  height: 17px;
+}
+
+.field-consent label {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #7f5f4d;
+}
+
+.form-privacy-note {
+  margin: 0.12rem 0 0.1rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #7e5d4a;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.request-form .btn-secondary {
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+
+.form-status {
+  margin: 0.15rem 0 0;
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.form-status.is-loading {
+  color: #8b6c59;
+}
+
+.form-status.is-success {
+  color: #416f59;
+}
+
+.form-status.is-error {
+  color: #a04b45;
+}
+
 .instagram .shell {
   padding-top: 0.75rem;
   padding-bottom: 0.65rem;
@@ -1085,6 +1206,16 @@ button:focus-visible {
 
   .feature-row li {
     font-size: 0.74rem;
+  }
+
+  .field-row label {
+    font-size: 0.74rem;
+  }
+
+  .field-row input,
+  .field-row select,
+  .field-row textarea {
+    padding: 0.56rem 0.56rem;
   }
 }
 

@@ -49,6 +49,12 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Verify no horizontal overflow at active viewport.
 - Verify mobile-width layout remains readable and touch friendly.
 - Verify homepage metadata includes title, description, Open Graph, and Twitter card values.
+- Verify Web3Forms form fields match approved customer-facing wording.
+- Verify required fields are Name, Email, Request Type, and Message.
+- Verify optional fields are Phone, Item or Category, Preferred Colours, and Pickup or Delivery Question.
+- Verify form includes visible privacy note and no payment details request.
+- Verify placeholder-key guard message appears when `YOUR_WEB3FORMS_ACCESS_KEY` is present.
+- Verify status message uses live region behavior for validation/success/error.
 
 ## Manual test checklist
 
@@ -69,6 +75,8 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Sanitized folder and file paths
 - No unsafe path traversal in export
 - Missing decisions explicitly marked
+- No real Web3Forms access key committed to repository
+- Form does not collect payment details
 
 ## Data validation checks
 
@@ -98,4 +106,4 @@ Validation, generation, persistence, document preview, and export behavior for t
 
 ## Known gaps
 
-- Web3Forms custom-order/contact integration is deferred to the next phase.
+- Web3Forms form requires production `access_key` before live submissions can succeed.

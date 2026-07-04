@@ -9,6 +9,19 @@
 
 ## 2026-07-04
 
+### Web3Forms custom request wording and safety refinement pass
+
+- Refined homepage Web3Forms contact/request form copy for polished customer-facing language.
+- Updated form fields to required set: Name, Email, Request Type, Message.
+- Added optional fields: Phone, Item or Category, Preferred Colours, Pickup or Delivery Question.
+- Added request type options: Product Question, Custom Order, Gift Order, Local Pickup Question, Other.
+- Added item/category options aligned to approved product categories.
+- Removed parent/guardian-specific wording from field labels and consent copy.
+- Added form privacy notice clarifying limited use of submitted information.
+- Added scope agreement checkbox wording to prevent payment details being submitted.
+- Preserved Web3Forms placeholder key (`YOUR_WEB3FORMS_ACCESS_KEY`) and no secrets were committed.
+- Updated placeholder-key guard message to clearly explain form is not active until key configuration.
+
 ### Production URL and deployment metadata alignment pass
 
 - Set canonical domain to `https://www.purrfectlymade.ca/` across homepage metadata, sitemap, and robots.

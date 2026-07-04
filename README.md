@@ -46,7 +46,23 @@ Static output is generated into `dist/`.
 - Newsletter card is marked `Coming Soon` and is intentionally non-clickable.
 - Cart/bag icon has been removed to avoid implying checkout functionality.
 - Custom-order CTA routing currently targets the on-page custom-order/contact area.
-- Web3Forms integration is deferred to the next form phase.
+
+## Web3Forms request form status
+
+- Web3Forms custom order/contact request form is now integrated on the homepage contact card.
+- Form endpoint remains `https://api.web3forms.com/submit` using `POST`.
+- Hidden fields in use: `access_key`, `subject`, and `from_name`.
+- Honeypot anti-spam field `botcheck` is included and hidden from users.
+- No real access key is committed. Placeholder remains: `YOUR_WEB3FORMS_ACCESS_KEY`.
+- Live submissions will not work until a real Web3Forms access key is added.
+
+### Customer-facing form scope
+
+- Form purpose: product questions and custom order requests.
+- Form does not collect payment details.
+- Privacy note shown near the form:
+   - `Please share only the details needed for your request. Your information will only be used to reply about your order or question.`
+- Customer-facing wording was cleaned up to remove awkward parent/guardian form language.
 
 ## Deployment files
 
