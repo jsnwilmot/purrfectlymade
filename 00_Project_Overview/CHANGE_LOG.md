@@ -9,6 +9,16 @@
 
 ## 2026-07-04
 
+### Request page extraction and homepage card balance restoration pass
+
+- Moved full Web3Forms custom-order/contact form from homepage card row to new `request.html` page.
+- Restored homepage lower card row balance by replacing stretched form card with compact `Request an Item` CTA card.
+- Updated request-related CTAs and footer links to route to `request.html`.
+- Kept homepage visual structure intact while removing in-row form stretch regression.
+- Added request page metadata including canonical URL `https://www.purrfectlymade.ca/request.html`.
+- Preserved Web3Forms placeholder-key guard and required payment-details agreement checkbox on request page.
+- Added `request.html` to sitemap and build copy list for dist deployment output.
+
 ### Final form activation and launch-readiness pass
 
 - Made payment-details agreement checkbox required on the homepage request form.

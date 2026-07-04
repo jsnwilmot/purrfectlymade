@@ -62,13 +62,20 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Verify no horizontal overflow at active viewport.
 - Verify mobile-width layout remains readable and touch friendly.
 - Verify homepage metadata includes title, description, Open Graph, and Twitter card values.
+- Verify homepage lower card row remains visually balanced and no card is stretched by form content.
+- Verify homepage request-related CTAs route to `request.html`.
+
+## Request page QA checklist
+
+- Verify `request.html` loads with one `h1` and expected intro copy.
 - Verify Web3Forms form fields match approved customer-facing wording.
-- Verify required fields are Name, Email, Request Type, and Message.
+- Verify required fields are Name, Email, Request Type, Message, and agreement checkbox.
 - Verify optional fields are Phone, Item or Category, Preferred Colours, and Pickup or Delivery Question.
 - Verify form includes visible privacy note and no payment details request.
 - Verify placeholder-key guard message appears when `YOUR_WEB3FORMS_ACCESS_KEY` is present.
 - Verify status message uses live region behavior for validation/success/error.
 - Verify payment-details agreement checkbox is required and has visible label text.
+- Verify no horizontal overflow on `request.html` at mobile width.
 
 ## Manual test checklist
 
@@ -122,3 +129,4 @@ Validation, generation, persistence, document preview, and export behavior for t
 
 - Web3Forms form requires production `access_key` before live submissions can succeed.
 - Native no-JavaScript fallback should not be treated as production-ready until the production key is set.
+- `request.html` should be included in all launch smoke tests and deployment QA checks.

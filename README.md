@@ -68,7 +68,8 @@ Manual fallback deploy command:
 
 ## Web3Forms request form status
 
-- Web3Forms custom order/contact request form is now integrated on the homepage contact card.
+- Web3Forms custom order/contact request form now lives on `request.html`.
+- Homepage lower feature row is restored to compact cards and links to `request.html` for requests.
 - Form endpoint remains `https://api.web3forms.com/submit` using `POST`.
 - Hidden fields in use: `access_key`, `subject`, and `from_name`.
 - Honeypot anti-spam field `botcheck` is included and hidden from users.
@@ -88,9 +89,9 @@ Manual fallback deploy command:
 
 ## Form activation steps
 
-1. Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `index.html` with the approved production key using a secure method.
+1. Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `request.html` with the approved production key using a secure method.
 2. Run `npm.cmd test` and `npm.cmd run build`.
-3. Validate request form submit success and error states in browser.
+3. Validate request page form submit success and error states in browser.
 4. Confirm no secrets were committed in staged changes before push.
 
 ## Final launch blockers
@@ -103,6 +104,7 @@ Manual fallback deploy command:
 Build output now includes deployment-critical files:
 
 - `dist/index.html`
+- `dist/request.html`
 - `dist/404.html`
 - `dist/robots.txt`
 - `dist/sitemap.xml`

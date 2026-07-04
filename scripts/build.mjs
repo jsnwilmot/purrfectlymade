@@ -9,6 +9,7 @@ await mkdir(dist, { recursive: true });
 
 const itemsToCopy = [
   "index.html",
+  "request.html",
   "404.html",
   "robots.txt",
   "sitemap.xml",

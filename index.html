@@ -156,7 +156,7 @@
               <div class="product-meta">
                 <h3>Pink Charm Bracelet</h3>
                 <p class="price">$18.00</p>
-                <a class="btn btn-card" href="#contact">View Details</a>
+                <a class="btn btn-card" href="request.html">View Details</a>
               </div>
             </article>
             <article class="product-card">
@@ -164,7 +164,7 @@
               <div class="product-meta">
                 <h3>Heart Tassel Keychain</h3>
                 <p class="price">$14.00</p>
-                <a class="btn btn-card" href="#contact">View Details</a>
+                <a class="btn btn-card" href="request.html">View Details</a>
               </div>
             </article>
             <article class="product-card">
@@ -172,7 +172,7 @@
               <div class="product-meta">
                 <h3>Bow Heart Earrings</h3>
                 <p class="price">$16.00</p>
-                <a class="btn btn-card" href="#contact">View Details</a>
+                <a class="btn btn-card" href="request.html">View Details</a>
               </div>
             </article>
             <article class="product-card">
@@ -180,7 +180,7 @@
               <div class="product-meta">
                 <h3>Heart Trinket Dish</h3>
                 <p class="price">$20.00</p>
-                <a class="btn btn-card" href="#contact">View Details</a>
+                <a class="btn btn-card" href="request.html">View Details</a>
               </div>
             </article>
           </div>
@@ -211,92 +211,13 @@
               <h3>Custom Orders</h3>
               <p>Have an idea in mind?</p>
               <p>I love creating custom pieces just for you!</p>
-              <a class="btn btn-secondary" href="#contact">Request a Custom Order</a>
+              <a class="btn btn-secondary" href="request.html">Request a Custom Order</a>
             </article>
             <article class="info-card contact-card" id="contact">
               <div class="icon-round"><img src="assets/images/icon-locket.png" alt="" /></div>
               <h3>Request an Item</h3>
-              <p>Tell us what you are looking for and we will reply as soon as we can.</p>
-              <form
-                class="request-form"
-                id="custom-order-form"
-                action="https://api.web3forms.com/submit"
-                method="POST"
-              >
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-                <input type="hidden" name="subject" value="New custom request from Purrfectly Made" />
-                <input type="hidden" name="from_name" value="Purrfectly Made Website" />
-                <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-                <div class="field-row">
-                  <label for="request-name">Name <span class="required-mark">(required)</span></label>
-                  <input id="request-name" name="name" type="text" autocomplete="name" required />
-                </div>
-
-                <div class="field-row">
-                  <label for="contact-email">Email <span class="required-mark">(required)</span></label>
-                  <input id="contact-email" name="email" type="email" autocomplete="email" required />
-                </div>
-
-                <div class="field-row">
-                  <label for="request-type">Request Type <span class="required-mark">(required)</span></label>
-                  <select id="request-type" name="request_type" required>
-                    <option value="">Select request type</option>
-                    <option>Product Question</option>
-                    <option>Custom Order</option>
-                    <option>Gift Order</option>
-                    <option>Local Pickup Question</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="field-row">
-                  <label for="contact-phone">Phone <span class="optional-mark">(optional)</span></label>
-                  <input id="contact-phone" name="phone" type="tel" autocomplete="tel" />
-                </div>
-
-                <div class="field-row">
-                  <label for="item-category">Item or Category <span class="optional-mark">(optional)</span></label>
-                  <select id="item-category" name="item_or_category">
-                    <option value="">Select item or category</option>
-                    <option>Bracelet</option>
-                    <option>Keychain</option>
-                    <option>Earrings</option>
-                    <option>Resin Piece</option>
-                    <option>3D Printed Item</option>
-                    <option>Seasonal Gift</option>
-                    <option>Personalized Item</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="field-row">
-                  <label for="preferred-colors">Preferred Colours <span class="optional-mark">(optional)</span></label>
-                  <input id="preferred-colors" name="preferred_colours" type="text" placeholder="Example: blush pink, cream, gold" />
-                </div>
-
-                <div class="field-row">
-                  <label for="pickup-delivery">Pickup or Delivery Question <span class="optional-mark">(optional)</span></label>
-                  <input id="pickup-delivery" name="pickup_or_delivery_question" type="text" placeholder="Example: Is local pickup available?" />
-                </div>
-
-                <div class="field-row">
-                  <label for="request-message">Message <span class="required-mark">(required)</span></label>
-                  <textarea id="request-message" name="message" rows="4" required></textarea>
-                </div>
-
-                <p class="form-privacy-note">
-                  Please share only the details needed for your request. Your information will only be used to reply about your order or question.
-                </p>
-
-                <div class="field-row field-consent">
-                  <input id="request-consent" name="request_scope_acknowledgement" type="checkbox" required aria-required="true" />
-                  <label for="request-consent">I understand this form is for product questions and custom order requests only. Please do not send payment details through this form. <span class="required-mark">(required)</span></label>
-                </div>
-
-                <button class="btn btn-secondary" type="submit">Send Request</button>
-                <p class="form-status" id="request-form-status" role="status" aria-live="polite"></p>
-              </form>
+              <p>Looking for something custom or have a question about an item? Send a request and we will reply as soon as we can.</p>
+              <a class="btn btn-secondary" href="request.html">Send a Request</a>
             </article>
           </div>
         </div>
@@ -347,23 +268,23 @@
               <li><a href="#shop">Earrings</a></li>
               <li><a href="#shop">Resin Pieces</a></li>
               <li><a href="#shop">3D Printed Items</a></li>
-              <li><a href="#custom-orders">Custom Orders</a></li>
+              <li><a href="request.html">Custom Orders</a></li>
             </ul>
           </section>
           <section>
             <h2>Info</h2>
             <ul>
               <li><a href="#about">About</a></li>
-              <li><a href="#custom-orders">Custom Orders</a></li>
+              <li><a href="request.html">Custom Orders</a></li>
               <li><a href="#top">Shipping &amp; Policies</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="request.html">Contact</a></li>
             </ul>
           </section>
           <section>
             <h2>Connect</h2>
             <ul>
               <li><a href="https://www.facebook.com/PurrfectlyMadeCrafts" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="#custom-orders">Custom Orders</a></li>
+              <li><a href="request.html">Custom Orders</a></li>
               <li><span class="footer-inline-note">Newsletter coming soon</span></li>
             </ul>
           </section>
@@ -388,8 +309,6 @@
         const menuPanel = document.getElementById('mobile-menu');
         const menuLinks = menuPanel ? menuPanel.querySelectorAll('a') : [];
         const mobileMq = window.matchMedia('(max-width: 930px)');
-        const requestForm = document.getElementById('custom-order-form');
-        const formStatus = document.getElementById('request-form-status');
 
         if (!header || !menuButton || !menuPanel) {
           return;
@@ -435,56 +354,6 @@
 
         mobileMq.addEventListener('change', syncForDesktop);
 
-        if (requestForm && formStatus) {
-          const setFormStatus = (message, type) => {
-            formStatus.textContent = message;
-            formStatus.classList.remove('is-error', 'is-success', 'is-loading');
-            if (type) {
-              formStatus.classList.add(type);
-            }
-          };
-
-          requestForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
-
-            if (!requestForm.checkValidity()) {
-              requestForm.reportValidity();
-              setFormStatus('Please complete all required fields.', 'is-error');
-              return;
-            }
-
-            const data = new FormData(requestForm);
-            const accessKey = (data.get('access_key') || '').toString().trim();
-
-            if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-              setFormStatus('This request form is not active yet. A Web3Forms access key must be added before live submissions can be sent.', 'is-error');
-              return;
-            }
-
-            try {
-              setFormStatus('Sending request...', 'is-loading');
-
-              const response = await fetch(requestForm.action, {
-                method: 'POST',
-                body: data,
-                headers: {
-                  Accept: 'application/json'
-                }
-              });
-              const result = await response.json();
-
-              if (response.ok && result.success) {
-                requestForm.reset();
-                setFormStatus('Thanks for reaching out. Your request was sent successfully.', 'is-success');
-                return;
-              }
-
-              setFormStatus(result.message || 'Unable to send your request right now. Please try again.', 'is-error');
-            } catch {
-              setFormStatus('Unable to send your request right now. Please try again.', 'is-error');
-            }
-          });
-        }
       })();
     </script>
 
