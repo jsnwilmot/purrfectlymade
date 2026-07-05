@@ -1,4 +1,4 @@
-import { cp, mkdir, rm } from "node:fs/promises";
+import { cp, mkdir, rm, stat } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const root = resolve(process.cwd());
@@ -7,20 +7,23 @@ const dist = resolve(root, "dist");
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 
-const itemsToCopy = [
+const requiredItems = [
   "index.html",
   "request.html",
+  "styles.css",
+  "assets",
+  "src"
+];
+
+const optionalItems = [
   "404.html",
   "robots.txt",
   "sitemap.xml",
   "CNAME",
-  "manifest.webmanifest",
-  "styles.css",
-  "src",
-  "assets"
+  "manifest.webmanifest"
 ];
 
-for (const item of itemsToCopy) {
+for (const item of requiredItems) {
   const source = resolve(root, item);
   const destination = resolve(dist, item);
 
@@ -28,6 +31,25 @@ for (const item of itemsToCopy) {
     recursive: true,
     force: true
   });
+}
+
+for (const item of optionalItems) {
+  const source = resolve(root, item);
+  const destination = resolve(dist, item);
+
+  try {
+    await stat(source);
+    await cp(source, destination, {
+      recursive: true,
+      force: true
+    });
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      console.log(`Skipping optional file: ${item}`);
+      continue;
+    }
+    throw error;
+  }
 }
 
 console.log("Build complete: static files copied to dist/");
