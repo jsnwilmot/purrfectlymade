@@ -10,6 +10,8 @@ The generated homepage image provided in project approval is the design source o
 
 - `assets/images/HeroBG.png` is the approved hero image asset.
 - `assets/images/icon-twocats.png` is the approved Made With Love card image asset.
+- `assets/images/icon_keychain.png` is the approved real-product keychain icon asset.
+- `assets/images/icon_dogtag.png` is the approved real-product dog tag icon asset.
 
 ## Required footer credit
 

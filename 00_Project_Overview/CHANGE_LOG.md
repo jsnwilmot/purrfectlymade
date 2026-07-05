@@ -9,6 +9,15 @@
 
 ## 2026-07-04
 
+### Real-product icon authenticity pass
+
+- Added approved real-product icon assets to visible homepage product/category areas without changing hero, logo, brand colours, or request form structure.
+- Replaced Keychains category card icon with `assets/images/icon_keychain.png`.
+- Replaced Personalized & Custom Orders category card icon with `assets/images/icon_dogtag.png`.
+- Updated Featured Handmade Items second card from generic keychain art to real-product icon and renamed item to `Personalized Resin Keychain`.
+- Updated New Items Coming Soon strip to include both real-product icons (`icon_keychain.png` and `icon_dogtag.png`).
+- Kept existing featured item price temporarily (`$14.00`) pending client confirmation for the renamed product.
+
 ### Homepage lower feature card height alignment pass
 
 - Fixed uneven lower feature row heights by enforcing stretch alignment across all three homepage feature cards.

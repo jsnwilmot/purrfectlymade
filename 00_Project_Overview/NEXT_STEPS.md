@@ -39,6 +39,7 @@ Configure a real Web3Forms `access_key` in `request.html` through an approved se
 
 - Validate homepage against approved desktop reference image with final stakeholder visual review.
 - Confirm production metadata and deployment baseline remains aligned with canonical domain `https://www.purrfectlymade.ca/`.
+- Confirm approved price for renamed featured item `Personalized Resin Keychain` (currently using temporary carryover price `$14.00`).
 - Keep Instagram hidden until an official profile is approved.
 - Keep newsletter in `Coming Soon` state until newsletter destination is approved.
 - Keep public email hidden until approved contact mailbox is available.
