@@ -74,13 +74,18 @@ Manual fallback deploy command:
 - Homepage lower feature row is restored to compact cards and links to `request.html` for requests.
 - Request page uses a secondary-page header spacing treatment so logo and request card do not overlap.
 - Form endpoint remains `https://api.web3forms.com/submit` using `POST`.
-- Hidden fields in use: `access_key`, `subject`, and `from_name`.
+- Hidden fields in use: `access_key`, `subject`, `from_name`, and `redirect`.
 - Honeypot anti-spam field `botcheck` is included and hidden from users.
-- No real access key is committed. Placeholder remains: `YOUR_WEB3FORMS_ACCESS_KEY`.
-- Live submissions will not work until a real Web3Forms access key is added.
+- Request form is live in production and submits successfully.
+- Web3Forms email notification delivery is confirmed.
+- Successful submissions redirect users to `/thank-you.html`.
 - Payment-details agreement checkbox is required before submit.
-- Current JavaScript enhancement prevents live submission attempts while placeholder key is present.
-- Native no-JavaScript fallback still posts to the configured endpoint and should not be considered production-ready until key setup is complete.
+- JavaScript success handling redirects only after confirmed successful API response.
+- Native no-JavaScript fallback includes a Web3Forms redirect field to `/thank-you.html`.
+
+Production verification note:
+
+Web3Forms request form is live and verified in production. Live submission works, email notification is received, and successful submissions redirect to /thank-you.html.
 
 ### Customer-facing form scope
 
@@ -92,14 +97,15 @@ Manual fallback deploy command:
 
 ## Form activation steps
 
-1. Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `request.html` with the approved production key using a secure method.
-2. Run `npm.cmd test` and `npm.cmd run build`.
-3. Validate request page form submit success and error states in browser.
-4. Confirm no secrets were committed in staged changes before push.
+Completed in production:
+
+1. Production Web3Forms integration configured and deployed.
+2. `npm.cmd test` and `npm.cmd run build` executed successfully.
+3. Request page form submit success and error states validated.
+4. Successful submissions verified to redirect to `/thank-you.html`.
 
 ## Final launch blockers
 
-- Web3Forms production access key has not been configured yet.
 - Final stakeholder visual parity sign-off is still required.
 
 ## Deployment files
@@ -109,8 +115,10 @@ Build output now includes deployment-critical files:
 - `dist/index.html`
 - `dist/request.html`
 - `dist/404.html`
+- `dist/thank-you.html`
 - `dist/robots.txt`
 - `dist/sitemap.xml`
 - `dist/CNAME`
 - `dist/manifest.webmanifest`
 - active favicon manifest and icons under `dist/assets/images/favicon/`
+- Build process auto-discovers and copies all root-level `.html` files into `dist/`.

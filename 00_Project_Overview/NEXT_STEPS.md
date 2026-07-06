@@ -26,7 +26,7 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Immediate next action
 
-Configure a real Web3Forms `access_key` in `request.html` through an approved secure method before enabling live submissions.
+Complete final stakeholder visual parity review and sign-off for homepage design.
 
 ## Codex progress update
 
@@ -43,21 +43,21 @@ Configure a real Web3Forms `access_key` in `request.html` through an approved se
 - Keep Instagram hidden until an official profile is approved.
 - Keep newsletter in `Coming Soon` state until newsletter destination is approved.
 - Keep public email hidden until approved contact mailbox is available.
-- Confirm Web3Forms form activation after key configuration and re-run form QA checks.
+- Web3Forms production request flow is live and verified; keep periodic smoke checks in launch QA.
 - Keep footer credit `Created by Rose & Paw Digital Designs` linked to `https://design.roseandpaw.ca` in all future homepage revisions.
 
 ## Form activation checklist
 
-- Replace `YOUR_WEB3FORMS_ACCESS_KEY` in `request.html` with the production key.
-- Verify successful submit response and user-facing success status message.
-- Verify required payment-details agreement checkbox is checked before submit.
-- Verify no payment detail collection is requested in form copy.
-- Verify privacy note remains visible near the form.
-- Verify no secrets are committed in repository history.
+- [x] Production Web3Forms integration configured and deployed.
+- [x] Successful submit response and user-facing flow verified in production.
+- [x] Email notification delivery verified in production.
+- [x] Successful submissions verified to redirect to `/thank-you.html`.
+- [x] Required payment-details agreement checkbox verified.
+- [x] No payment detail collection requested in form copy.
+- [x] Privacy note remains visible near the form.
 
 ## Final launch blockers
 
-- Production Web3Forms key has not been configured yet.
 - Final stakeholder sign-off for homepage visual parity is pending.
 - Final stakeholder sign-off for new `request.html` page content and spacing is pending.
 
@@ -100,7 +100,11 @@ Phase 1: Project setup
 
 ## Blockers
 
-- Production Web3Forms key insertion via approved secure path.
+- Final stakeholder sign-off for homepage visual parity and request page content/spacing.
+
+## Production verification note
+
+Web3Forms request form is live and verified in production. Live submission works, email notification is received, and successful submissions redirect to /thank-you.html.
 
 ## Non-blocking improvements
 

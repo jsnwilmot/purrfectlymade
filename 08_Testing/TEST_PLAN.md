@@ -43,6 +43,15 @@ Validation, generation, persistence, document preview, and export behavior for t
 - Placeholder access-key status message appears and live fetch submission is not attempted while placeholder key is present.
 - Dist output contains deployment-critical files and favicon assets.
 
+## Production verification results (2026-07-06)
+
+- Web3Forms request form is live and verified in production.
+- Live form submission works.
+- Web3Forms email notification is received.
+- Successful submissions redirect to `/thank-you.html`.
+- `thank-you.html` is included in Cloudflare build output.
+- Build output regression fixed by updating `scripts/build.mjs` to auto-discover and copy root-level `.html` files.
+
 ## Homepage QA checklist
 
 - Compare built homepage screenshot against approved generated homepage image.
@@ -130,6 +139,5 @@ Validation, generation, persistence, document preview, and export behavior for t
 
 ## Known gaps
 
-- Web3Forms form requires production `access_key` before live submissions can succeed.
-- Native no-JavaScript fallback should not be treated as production-ready until the production key is set.
 - `request.html` should be included in all launch smoke tests and deployment QA checks.
+- `thank-you.html` should be included in all launch smoke tests and deployment QA checks.

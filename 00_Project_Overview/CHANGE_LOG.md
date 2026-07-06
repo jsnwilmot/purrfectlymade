@@ -7,6 +7,18 @@
 **Target platform:** Web browser, tablet, mobile  
 **Status:** Ready for Codex
 
+## 2026-07-06
+
+### Web3Forms production verification and thank-you build-output fix
+
+- Confirmed live Web3Forms request form submission works in production.
+- Confirmed Web3Forms email notification delivery is received.
+- Confirmed successful request submissions redirect to `/thank-you.html`.
+- Diagnosed Cloudflare `404` on `/thank-you.html` to build-script omission in `scripts/build.mjs`.
+- Updated build pipeline to auto-discover and copy all root-level `.html` files into `dist/`.
+- Rebuilt and verified `dist/thank-you.html` plus other root pages are present in deployment output.
+- Committed and pushed build fix on `main` as commit `2009d1e`.
+
 ## 2026-07-04
 
 ### Real-product icon authenticity pass

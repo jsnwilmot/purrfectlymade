@@ -46,6 +46,8 @@ Expected behavior:
 
 - Cloudflare deploys static files from `dist/` only.
 - `node_modules/` is excluded by `.gitignore` and is not a deployable static asset directory.
+- Build script now auto-discovers and copies all root-level `.html` files into `dist/` to avoid missing page deploys.
+- `thank-you.html` is included in `dist/` and is deployable at `/thank-you.html`.
 
 ## Cloudflare Workers configuration
 
@@ -74,6 +76,10 @@ Alternative manual deploy command:
 ## Required secrets or configuration
 
 - [MISSING: required secrets and environment variables]
+
+## Production verification note
+
+Web3Forms request form is live and verified in production. Live submission works, email notification is received, and successful submissions redirect to /thank-you.html.
 
 ## Security notes
 
