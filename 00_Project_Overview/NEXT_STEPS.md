@@ -26,7 +26,7 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Immediate next action
 
-Complete final stakeholder visual parity review and sign-off for homepage design.
+Maintain post-launch polish backlog and periodic smoke-check QA.
 
 ## Codex progress update
 
@@ -37,7 +37,7 @@ Complete final stakeholder visual parity review and sign-off for homepage design
 
 ## Homepage implementation follow-up
 
-- Validate homepage against approved desktop reference image with final stakeholder visual review.
+- Stakeholder visual/content sign-off is complete for homepage parity and request page content/spacing.
 - Confirm production metadata and deployment baseline remains aligned with canonical domain `https://www.purrfectlymade.ca/`.
 - Confirm approved price for renamed featured item `Personalized Resin Keychain` (currently using temporary carryover price `$14.00`).
 - Keep Instagram hidden until an official profile is approved.
@@ -58,8 +58,7 @@ Complete final stakeholder visual parity review and sign-off for homepage design
 
 ## Final launch blockers
 
-- Final stakeholder sign-off for homepage visual parity is pending.
-- Final stakeholder sign-off for new `request.html` page content and spacing is pending.
+- None.
 
 ## Architect review tasks
 
@@ -100,7 +99,7 @@ Phase 1: Project setup
 
 ## Blockers
 
-- Final stakeholder sign-off for homepage visual parity and request page content/spacing.
+- None.
 
 ## Production verification note
 
@@ -109,3 +108,5 @@ Web3Forms request form is live and verified in production. Live submission works
 ## Non-blocking improvements
 
 - Improve optional reporting and branding detail coverage after core scope approval.
+- Optional visual parity refinements can continue post-launch where they improve brand fidelity without affecting readability, trust, or usability.
+- Optional request page spacing and typography refinements can continue post-launch if desired.

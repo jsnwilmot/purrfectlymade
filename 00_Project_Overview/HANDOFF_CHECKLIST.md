@@ -40,9 +40,9 @@ Ready for Codex — all blocking client review and readiness checks are complete
 
 ## Current blockers
 
+- None.
 - No technical blockers from Web3Forms; production request flow is complete and verified.
-- Final stakeholder sign-off for homepage visual parity is pending.
-- Final stakeholder sign-off for request page content and spacing is pending.
+- Stakeholder sign-off is complete for homepage visual parity and request page content/spacing.
 
 ## Operating loop
 
