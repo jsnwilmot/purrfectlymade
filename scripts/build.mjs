@@ -1,22 +1,24 @@
-import { cp, mkdir, rm, stat } from "node:fs/promises";
+import { cp, mkdir, readdir, rm, stat } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const root = resolve(process.cwd());
 const dist = resolve(root, "dist");
 
+const rootHtmlFiles = (await readdir(root, { withFileTypes: true }))
+  .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".html"))
+  .map((entry) => entry.name);
+
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 
 const requiredItems = [
-  "index.html",
-  "request.html",
+  ...rootHtmlFiles,
   "styles.css",
   "assets",
   "src"
 ];
 
 const optionalItems = [
-  "404.html",
   "robots.txt",
   "sitemap.xml",
   "CNAME",
