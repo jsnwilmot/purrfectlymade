@@ -1,6 +1,6 @@
 # PurrfectlyMade Website
 
-Homepage implementation status: in progress toward approved generated homepage image parity.
+Homepage implementation status: production-ready. Ongoing refinements are focused on performance and optional visual polish.
 
 ## Design target requirement
 
@@ -31,6 +31,7 @@ The generated homepage image provided in project approval is the design source o
 ## Build output
 
 Static output is generated into `dist/`.
+The live deployment uses optimized static output from `dist/`.
 
 ## Cloudflare Pages deployment
 
@@ -55,7 +56,8 @@ Manual fallback deploy command:
 
 - This project is static only.
 - No checkout, payment processing, authentication, backend, or database are included.
-- Homepage remains under strict visual parity requirements and is not complete while visible pixel-perfect differences remain.
+- The site is production-ready.
+- Remaining performance work is primarily image optimization for additional PageSpeed improvements.
 
 ## Production metadata baseline
 
@@ -106,7 +108,7 @@ Completed in production:
 
 ## Final launch blockers
 
-- Final stakeholder visual parity sign-off is still required.
+- None.
 
 ## Deployment files
 

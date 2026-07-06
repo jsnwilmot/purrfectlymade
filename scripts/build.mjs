@@ -69,29 +69,14 @@ const addNoIndexToThankYou = (html, fileName) => {
   return html.replace(/(<meta\s+name="description"[\s\S]*?\/?>\n)/i, `$1    <meta name="robots" content="noindex" />\n`);
 };
 
-const externalizeInlineSiteScript = (html) => {
-  let removedInlineScript = false;
-  const scriptPattern = /\n\s*<script>\s*\(\(\) => \{[\s\S]*?\}\)\(\);\s*<\/script>\s*/g;
-  const cleanedHtml = html.replace(scriptPattern, () => {
-    removedInlineScript = true;
-    return "\n";
-  });
+const ensureSiteScript = (html) => {
+  const scriptTagPattern = /<script\s+src="assets\/js\/site\.js(?:\?v=[^"]*)?"\s+defer><\/script>/i;
 
-  if (!removedInlineScript || cleanedHtml.includes('src="assets/js/site.js"')) {
-    return cleanedHtml;
+  if (scriptTagPattern.test(html)) {
+    return html.replace(scriptTagPattern, '<script src="assets/js/site.js?v=perf1" defer></script>');
   }
 
-  return cleanedHtml.replace(/\n\s*<\/body>/, '\n    <script src="assets/js/site.js" defer></script>\n  </body>');
-};
-
-const polishHomepageCopy = (html, fileName) => {
-  if (fileName !== "index.html") {
-    return html;
-  }
-
-  return html
-    .replace(/>View Details</g, ">Request This Item<")
-    .replace(/View All Items/g, "Browse Collections");
+  return html.replace(/\n\s*<\/body>/, '\n    <script src="assets/js/site.js?v=perf1" defer></script>\n  </body>');
 };
 
 const transformHtml = (html, fileName) => {
@@ -105,11 +90,11 @@ const transformHtml = (html, fileName) => {
 
     return `${fontUrl}&display=swap`;
   });
+  output = output.replace(/assets\/js\/site\.js(?:\?v=[^\"]*)?/g, `assets/js/site.js?v=${assetVersion}`);
   output = addHeroPreload(output, fileName);
   output = addNoIndexToThankYou(output, fileName);
-  output = polishHomepageCopy(output, fileName);
   output = output.replace(/<img\b[^>]*>/gi, optimizeImageTag);
-  output = externalizeInlineSiteScript(output);
+  output = ensureSiteScript(output);
 
   return output;
 };

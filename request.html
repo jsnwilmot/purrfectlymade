@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
@@ -206,7 +206,7 @@
             <ul>
               <li><a href="index.html#about">About</a></li>
               <li><a href="request.html">Custom Orders</a></li>
-              <li><a href="index.html#top">Shipping &amp; Policies</a></li>
+              <li><a href="policies.html">Shipping &amp; Policies</a></li>
               <li><a href="request.html">Contact</a></li>
             </ul>
           </section>
@@ -232,111 +232,6 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-        const header = document.querySelector('.site-header');
-        const menuButton = document.querySelector('.menu-toggle');
-        const menuPanel = document.getElementById('mobile-menu');
-        const menuLinks = menuPanel ? menuPanel.querySelectorAll('a') : [];
-        const mobileMq = window.matchMedia('(max-width: 930px)');
-        const requestForm = document.getElementById('custom-order-form');
-        const formStatus = document.getElementById('request-form-status');
-
-        if (!header || !menuButton || !menuPanel) {
-          return;
-        }
-
-        const setOpen = (isOpen) => {
-          header.classList.toggle('menu-open', isOpen);
-          menuPanel.hidden = !isOpen;
-          menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-        };
-
-        setOpen(false);
-
-        menuButton.addEventListener('click', () => {
-          const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-          setOpen(!expanded);
-        });
-
-        menuLinks.forEach((link) => {
-          link.addEventListener('click', () => {
-            setOpen(false);
-          });
-        });
-
-        document.addEventListener('keydown', (event) => {
-          if (event.key === 'Escape') {
-            setOpen(false);
-          }
-        });
-
-        document.addEventListener('click', (event) => {
-          if (!header.contains(event.target)) {
-            setOpen(false);
-          }
-        });
-
-        const syncForDesktop = () => {
-          if (!mobileMq.matches) {
-            setOpen(false);
-          }
-        };
-
-        mobileMq.addEventListener('change', syncForDesktop);
-
-        if (requestForm && formStatus) {
-          const setFormStatus = (message, type) => {
-            formStatus.textContent = message;
-            formStatus.classList.remove('is-error', 'is-success', 'is-loading');
-            if (type) {
-              formStatus.classList.add(type);
-            }
-          };
-
-          requestForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
-
-            if (!requestForm.checkValidity()) {
-              requestForm.reportValidity();
-              setFormStatus('Please complete all required fields.', 'is-error');
-              return;
-            }
-
-            const data = new FormData(requestForm);
-            const accessKey = (data.get('access_key') || '').toString().trim();
-
-            if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-              setFormStatus('This request form is not active yet. A Web3Forms access key must be added before live submissions can be sent.', 'is-error');
-              return;
-            }
-
-            try {
-              setFormStatus('Sending request...', 'is-loading');
-
-              const response = await fetch(requestForm.action, {
-                method: 'POST',
-                body: data,
-                headers: {
-                  Accept: 'application/json'
-                }
-              });
-              const result = await response.json();
-
-              if (response.ok && result.success) {
-                requestForm.reset();
-                window.location.assign('thank-you.html');
-                return;
-              }
-
-              setFormStatus(result.message || 'Unable to send your request right now. Please try again.', 'is-error');
-            } catch {
-              setFormStatus('Unable to send your request right now. Please try again.', 'is-error');
-            }
-          });
-        }
-      })();
-    </script>
+    <script src="assets/js/site.js?v=perf1" defer></script>
   </body>
 </html>

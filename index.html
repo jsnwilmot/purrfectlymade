@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
@@ -156,7 +156,7 @@
               <div class="product-meta">
                 <h3>Pink Charm Bracelet</h3>
                 <p class="price">$18.00</p>
-                <a class="btn btn-card" href="request.html">View Details</a>
+                <a class="btn btn-card" href="request.html">Request This Item</a>
               </div>
             </article>
             <article class="product-card">
@@ -164,7 +164,7 @@
               <div class="product-meta">
                 <h3>Personalized Resin Keychain</h3>
                 <p class="price">$14.00</p>
-                <a class="btn btn-card" href="request.html">View Details</a>
+                <a class="btn btn-card" href="request.html">Request This Item</a>
               </div>
             </article>
             <article class="product-card">
@@ -172,7 +172,7 @@
               <div class="product-meta">
                 <h3>Bow Heart Earrings</h3>
                 <p class="price">$16.00</p>
-                <a class="btn btn-card" href="request.html">View Details</a>
+                <a class="btn btn-card" href="request.html">Request This Item</a>
               </div>
             </article>
             <article class="product-card">
@@ -180,12 +180,12 @@
               <div class="product-meta">
                 <h3>Heart Trinket Dish</h3>
                 <p class="price">$20.00</p>
-                <a class="btn btn-card" href="request.html">View Details</a>
+                <a class="btn btn-card" href="request.html">Request This Item</a>
               </div>
             </article>
           </div>
           <div class="center-wrap">
-            <a class="btn btn-primary" href="#shop">View All Items <span aria-hidden="true">&#128062;</span></a>
+            <a class="btn btn-primary" href="#shop">Browse Collections <span aria-hidden="true">&#128062;</span></a>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="request.html">Custom Orders</a></li>
-              <li><a href="#top">Shipping &amp; Policies</a></li>
+              <li><a href="policies.html">Shipping &amp; Policies</a></li>
               <li><a href="request.html">Contact</a></li>
             </ul>
           </section>
@@ -302,60 +302,7 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-        const header = document.querySelector('.site-header');
-        const menuButton = document.querySelector('.menu-toggle');
-        const menuPanel = document.getElementById('mobile-menu');
-        const menuLinks = menuPanel ? menuPanel.querySelectorAll('a') : [];
-        const mobileMq = window.matchMedia('(max-width: 930px)');
-
-        if (!header || !menuButton || !menuPanel) {
-          return;
-        }
-
-        const setOpen = (isOpen) => {
-          header.classList.toggle('menu-open', isOpen);
-          menuPanel.hidden = !isOpen;
-          menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-        };
-
-        setOpen(false);
-
-        menuButton.addEventListener('click', () => {
-          const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-          setOpen(!expanded);
-        });
-
-        menuLinks.forEach((link) => {
-          link.addEventListener('click', () => {
-            setOpen(false);
-          });
-        });
-
-        document.addEventListener('keydown', (event) => {
-          if (event.key === 'Escape') {
-            setOpen(false);
-          }
-        });
-
-        document.addEventListener('click', (event) => {
-          if (!header.contains(event.target)) {
-            setOpen(false);
-          }
-        });
-
-        const syncForDesktop = () => {
-          if (!mobileMq.matches) {
-            setOpen(false);
-          }
-        };
-
-        mobileMq.addEventListener('change', syncForDesktop);
-
-      })();
-    </script>
+    <script src="assets/js/site.js?v=perf1" defer></script>
 
   </body>
 </html>
