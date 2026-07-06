@@ -98,9 +98,10 @@
               action="https://api.web3forms.com/submit"
               method="POST"
             >
-              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-              <input type="hidden" name="subject" value="New custom request from Purrfectly Made" />
+              <input type="hidden" name="access_key" value="b08dcba7-f168-4690-aefb-2b1e73a871ce" />
+              <input type="hidden" name="subject" value="New website form submission" />
               <input type="hidden" name="from_name" value="Purrfectly Made Website" />
+              <input type="hidden" name="redirect" value="https://www.purrfectlymade.ca/thank-you.html" />
               <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
               <div class="field-row">
@@ -325,7 +326,7 @@
 
               if (response.ok && result.success) {
                 requestForm.reset();
-                setFormStatus('Thanks for reaching out. Your request was sent successfully.', 'is-success');
+                window.location.assign('thank-you.html');
                 return;
               }
 

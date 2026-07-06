@@ -664,6 +664,22 @@ button:focus-visible {
   font-size: clamp(1.45rem, 2.8vw, 1.95rem);
 }
 
+.thank-you-card {
+  text-align: center;
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.thank-you-actions .btn {
+  margin-top: 0;
+}
+
 .request-page-body .site-header {
   padding-bottom: 0.45rem;
 }
